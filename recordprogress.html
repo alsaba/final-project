@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" charset="utf-8">
+
+    </script>
+	
+	<script type="text/javascript" src="jquery.maskedinput-1.3.js"></script>
+	<script type="text/javascript" src="recordprogress.js"></script>
+  </head>
+
+  
+  <body>
+		<div class="main">
+		<div id="message" > </div>
+			<form class="form" method="post" action="#" id="createuserform">
+				
+			<label>For user :</label>
+			<select   id="selectusername"></select>
+			
+			<label>Description :</label>
+			
+			<TEXTAREA  name="description" id="description" ROWS="3" ></TEXTAREA> <br>
+			
+			<label>Porgres level</label>
+			<input type="text" class="percent" id="porgreslevel"><br>
+			
+			<label>Car Image</label>
+			<img onclick="capturePhotoWithData();"  src="cam.png" style="width:40px;height:40px;vertical-align:middle"> <br>
+			<img style="display:none;width:180px;height:180px;" id="largeImage" src="" />
+			
+			<input type="button" name="add log" id="login" value="Add Log">
+			<input type="submit" style="visibility: hidden; position: absolute;"  >
+			</form>
+		</div>
+</body>
+</html>

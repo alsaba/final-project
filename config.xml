@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.lastname.helloworld" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap   = "http://phonegap.com/ns/1.0" xmlns:android  = "http://schemas.android.com/apk/res/android" version     = "1.0.0" >
+
+    <name>Car Repair tracker</name>
+    <description>
+      Track your car maintenance Now!
+    </description>
+    <author email="sab32000@hotmail.com" href="https://github.com/alsaba">
+        Ahmed Sabaa
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<log level="DEBUG"/>
+	
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+
+	
+	<feature name="Camera">
+		<param name="ios-package" value="CDVCamera" />
+		<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+	</feature>
+
+	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+	<gap:plugin name="org.apache.cordova.media" version="0.2.13" />
+
+</widget>
